@@ -12,5 +12,6 @@
         <page name='Enum'/>
         <page name='Struct'/>
         <page name='clases'/>
+        <page name='Pruebas'/>
     </pages>
 </playground>

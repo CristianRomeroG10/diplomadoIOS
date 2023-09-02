@@ -70,3 +70,36 @@ let aBunchOfNumbers = [10, 1, 4, 3, 57, 43, 27, 84]
 let sortedEvenAndOddNumbers = sortedEvenOddNumbers(aBunchOfNumbers)
 print("The even numbers are: \(sortedEvenAndOddNumbers.evens)")
 print("The odd numbers are: \(sortedEvenAndOddNumbers.odds)")
+
+
+func grabMiddleName(fullName name: (first: String, middle: String?, last: String)) -> String?{
+    return name.middle
+}
+
+let middleName = grabMiddleName(fullName: (first: "Alejandro", middle: "middle Name", last: "Mendoza" ))
+
+
+if let middleName = middleName {
+    print(middleName)
+}
+
+
+func greetByMiddleName(fromFullname name:  (first: String, middle: String?, last: String) /*,age: Int*/){
+    if let middle = name.middle{
+        guard let middlename = name.middle /*, age > 18*/ else{
+            print("Hey there!")
+            return
+        }
+        
+        print("Hey, \(middlename)")
+    }
+}
+
+greetByMiddleName(fromFullname: (first: "Cristian", middle: "Guillermo", last: "Romero")/*, age: 19*/)
+
+
+func sortedEvenOddNumbers(_ numbers: [Int]) -> (even: [Int], odd: [Int]){
+    return (even: [], odd: [])
+}
+
+

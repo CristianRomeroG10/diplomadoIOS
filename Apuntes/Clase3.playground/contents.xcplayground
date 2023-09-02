@@ -9,5 +9,8 @@
         <page name='While'/>
         <page name='SerpientesyEscaleras'/>
         <page name='Structs'/>
+        <page name='Enum'/>
+        <page name='Struct'/>
+        <page name='clases'/>
     </pages>
 </playground>
